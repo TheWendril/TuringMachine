@@ -33,12 +33,12 @@ public:
         *this->current = newSymbol;
     }
 
-    static std::list<Symbol> str_2_symbol(std::string email){
+    static std::list<Symbol> str_2_symbol(std::string input){
         
         std::list<Symbol> symbols = std::list<Symbol>{};
         symbols.push_back(Symbol::BEGIN);
 
-        for(auto i : email){
+        for(auto i : input){
             
             if(i == 48)
                 symbols.push_back(Symbol::A);
